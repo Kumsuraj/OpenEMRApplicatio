@@ -18,13 +18,13 @@ public class WebDriverWrapper {
 		String browser = "ch";
 
 		if (browser.equalsIgnoreCase("ie")) {
-			System.setProperty("webdriver.ie.driver", "src\\test\\resources\\driver\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "src\\test\\\\resources\\driver\\chromedriver.exe");
 			driver = new InternetExplorerDriver();
 		} else if (browser.equalsIgnoreCase("ff")) {
-			System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\driver\\chromedriver.exe");
 			driver = new FirefoxDriver();
 		} else {
-			System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\driver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 
